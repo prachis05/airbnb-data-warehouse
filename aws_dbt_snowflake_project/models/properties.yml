@@ -1,0 +1,44 @@
+
+version: 2
+
+models:
+  - name: silver_bookings
+    columns:
+      - name: BOOKING_ID
+        data_tests:
+          - unique
+          - not_null
+
+  - name: silver_listings
+    columns:
+      - name: LISTING_ID
+        data_tests:
+          - unique
+          - not_null
+
+  - name: silver_hosts
+    columns:
+      - name: HOST_ID
+        data_tests:
+          - unique
+          - not_null
+  - name: dim_hosts
+    columns:
+      - name: HOST_ID
+        data_tests:
+          - unique
+          - not_null
+
+  - name: dim_listings
+    columns:
+      - name: LISTING_ID
+        data_tests:
+          - unique
+          - not_null
+
+  - name: fact_bookings
+    columns:
+      - name: BOOKING_ID
+        data_tests:
+          - unique
+          - not_null

@@ -1,0 +1,16 @@
+
+# Credentials
+profiles.yml
+.user.yml
+.env
+.env.*
+
+# dbt generated files
+target/
+dbt_packages/
+logs/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
